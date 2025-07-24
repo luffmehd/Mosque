@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mosque Homepage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+
+    .navbar {
+    background: linear-gradient(to right, #d4bda3, #c3b4a0);
+    border-bottom: 2px solid #b6a593;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  }
+
+  .navbar-brand:hover {
+    color: #ffe8d6;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+
+  .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ffe8d6;
+  }
+
+  .navbar-brand:hover {
+    color: #ffe8d6;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .prayer-table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+  .prayer-table th,
+  .prayer-table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+  }
+
+  .prayer-table th {
+    background-color: #343a40;
+    color: white;
+  }
+
+  .prayer-table td {
+    background-color: #f8f9fa;
+    font-weight: 500;
+  }
+  .text-muted {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #6c757d;
+  }
+
+  body {
+    background-color: #f8f5f2;
+    color: #343a40;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .navbar {
+    background-color: #f8f5f2;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar-brand {
+    color: #343a40;
+    font-weight: bold;
+  }
+
+  .navbar-brand:hover {
+    color: #5c5c5c;
+  }
+
+  section {
+    background-color: #e7dfd5;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    color: #343a40;
+  }
+
+  footer {
+    background-color: #f8f5f2;
+    color: #343a40;
+    border-top: 1px solid #ccc;
+  }
+  
+</style>
+<body>
+
+  <!-- 🕌 Navbar -->
+  <nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand mx-auto" href="#" style="font-family: 'Georgia', serif; font-size: 1.8rem; font-weight: bold; color: #fff;">
+      Centro Islamico Cultural del Carmel
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarLinks">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-2">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link text-white" href="#">Services</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">Latest News</h2>
+  <div class="bg-light p-4 rounded shadow-sm">
+    <ul class="list-unstyled">
+      <li class="mb-3">
+        <strong>📍 New Guided Visit:</strong> The Centre Islàmic del Carmel hosted an intercultural visit on <em>March 3, 2023</em>, welcoming neighbors to learn about Islamic traditions and community life.
+      </li>
+      <li class="mb-3">
+        <strong>🕌 Community Growth:</strong> The mosque continues to serve as a peaceful hub for worship and learning, with excellent reviews and growing attendance.
+      </li>
+      <li>
+        <strong>📢 Upcoming Events:</strong> Horacion de Salat el AID el SABADO A las 9:00 en Plaza Catalunya!
+    </ul>
+  </div>
+
+
+</section>
+  <!-- ⏰ Prayer Times Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Prayer Times in Barcelona</h2>
+    <div id="prayer-times" class="text-center">
+      <!-- Prayer times will load here -->
+    </div>
+  </section>
+
+  
+  <!-- 📖 Info Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">About Our Mosque</h2>
+    <p class="text-center">
+      Welcome to our mosque in Barcelona—a peaceful place for prayer, community, and reflection. Join us for daily prayers, Quran studies, and cultural gatherings that celebrate unity and faith.
+    </p>
+  </section>
+
+  <section class="container my-5">
+  <h2 class="text-center mb-4">Children's School Program</h2>
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <p class="lead">
+        Our mosque offers a nurturing educational program for children every <strong>Monday, Tuesday, and Wednesday</strong> from <strong>19:00 to 20:00</strong>. 
+        The sessions include Quran recitation, Islamic studies, and character-building activities in a warm and welcoming environment.
+      </p>
+    </div>
+    <div class="col-md-6 text-center">
+      <img src="./image.png" alt="Kids studying in mosque" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
+
+<section class="container my-5">
+  <h2 class="text-center mb-4">📍 Our Location</h2>
+  <div class="ratio ratio-16x9 rounded shadow">
+    <iframe 
+      src="https://www.google.com/maps?q=173+Passeig+Mare+de+Déu+del+Coll,+Barcelona,+08032&output=embed" 
+      allowfullscreen 
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
+
+
+
+  <!-- 🧕 Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    © 2025 Barcelona Mosque. All rights reserved.
+  </footer>
+
+  <!-- 🔌 Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- 🕋 Prayer Time Script (Sample API Example) -->
+  <script>
+  fetch("https://api.aladhan.com/v1/timingsByCity?city=Barcelona&country=Spain")
+    .then(res => res.json())
+    .then(data => {
+      const timings = data.data.timings;
+      const required = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
+      const rows = required.map(name => {
+        const delay = name === "Fajr" ? "+30 min" : "+10 min";
+        return `<tr><td>${name}</td><td>${timings[name]}</td><td class="text-muted">${delay}</td></tr>`;
+      }).join("");
+      document.getElementById("prayer-times").innerHTML = `
+        <table class="prayer-table">
+          <thead><tr><th>Prayer</th><th>Adhan Time</th><th>Delay</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      `;
+    });
+</script>
+
+</body>
+</html>
